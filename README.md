@@ -1,2 +1,2 @@
 # bookbot
-Firt project for Book.Dev course
+First project for the Book.Dev course.
