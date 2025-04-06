@@ -17,10 +17,11 @@ def letter_count():
     dictionary = {}
     for letter in list(new_list):
         letter = letter.lower()
-        if letter not in dictionary:
-            dictionary[letter] = 1
-        elif letter in dictionary:
-            dictionary[letter] += 1
+        if letter.isalpha():
+            if letter not in dictionary:
+                dictionary[letter] = 1
+            elif letter in dictionary:
+                dictionary[letter] += 1
     return dictionary
 
 # dictionary of characters
