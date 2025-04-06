@@ -22,3 +22,12 @@ def letter_count():
         elif letter in dictionary:
             dictionary[letter] += 1
     return dictionary
+
+# dictionary of characters
+def characters_dictionary():
+    d_in = letter_count()
+    d_out = []
+    for char, count in d_in.items():
+        d_out.append({"char" : char, "count" : count})
+    d_out.sort(key=lambda x: x["count"], reverse=True)
+    return d_out
